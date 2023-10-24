@@ -5,7 +5,7 @@ const router = express.Router;
 app.use(express.static(path.join(__dirname, "public")));
 app.get("/", (req, res) => {
   console.log("listeing");
-  res.send("hi");
-  // res.sendFile(path.join(__dirname, "views", "home.html"));
+  // res.send("hi");
+  res.sendFile(path.join(__dirname, "views", "home.html"));
 });
 app.listen(9000);
