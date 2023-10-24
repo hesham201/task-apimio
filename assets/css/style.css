@@ -1,0 +1,146 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    padding: 30px 15px;
+    background-color: #7C81AD;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Oxanium', sans-serif;
+}
+
+
+.btn-anchors {
+    display: flex;
+    padding: 20px 0;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.btn-anchors>div>* {
+    cursor: pointer;
+}
+
+@media all and (max-width:910px) {
+    .btn-anchors {
+        flex-direction: column;
+    }
+
+    .btn-anchors>div>* {
+        width: calc(33.3% - 10px)
+    }
+
+    .btn-anchors>div>a {
+        display: inline-block;
+        text-align: center;
+    }
+}
+
+@media all and (max-width:603px) {
+    .btn-anchors>div>* {
+        width: 100%
+    }
+
+    .btn-anchors {
+        gap: 10px;
+    }
+}
+
+.btn-anchors>div {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.selected {
+    border: 2px solid #2E4374;
+}
+
+/* .interactable {
+    padding: 10px;
+    margin: 5px;
+    cursor: pointer;
+} */
+
+h1 {
+    text-align: center;
+    color: #E5C3A6;
+    opacity: 0;
+    transition: all .3s ease-in;
+}
+
+video {
+    max-width: 100%;
+}
+
+button {
+    background-color: #E5C3A6;
+    padding: 12px 30px;
+    border: none;
+    color: #2E4374;
+}
+
+a {
+    background-color: #E5C3A6;
+    padding: 12px 30px;
+    border: none;
+    color: #2E4374;
+    text-decoration: none;
+}
+
+select {
+    background-color: #E5C3A6;
+    padding: 12px 30px;
+    border: none;
+    color: #2E4374;
+}
+
+h2 {
+    color: #E5C3A6;
+}
+
+#dashboard {
+    display: flex;
+    padding: 30px 0;
+    color: #E5C3A6;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+#dashboard h2 {}
+
+.only-btns {
+    transform: translateX(-300px);
+    opacity: 0;
+    transition: all .4s ease-in;
+}
+
+.anchors-select {
+    transform: translateX(300px);
+    opacity: 0;
+    transition: all .4s ease-in;
+}
+
+#video-main {
+    transform: scale(1.7);
+    opacity: 0;
+    transition: all .7s ease-in;
+    transition-delay: .4s;
+
+}
