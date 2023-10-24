@@ -1,5 +1,16 @@
 {
+  "name":"task_apimio",
+  "version":"1.1.0",
+  "description": "",
+  "main":"index.js",
+  "scripts": {
+    "start":"node ./api.js",
+    "vercel-build":"echo hello"
+  },
   "dependencies": {
-    "express": "^4.18.2"
+    "express": "^4.18.2",
+    "netlify-cli": "^16.9.1",
+    "netlify-lambda": "^2.0.16",
+    "serverless-http": "^3.2.0"
   }
 }
